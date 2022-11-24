@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
 
+body {
+    background-image: url('https://images.wallpaperscraft.com/image/single/paint_black_texture_125883_3840x2160.jpg');
+    background-repeat: no-repeat;
+    height: 100vh;
+    flex: 1;
+}
 nav{
     background-color: #444;
     display: flex;
@@ -7,18 +13,20 @@ nav{
     font-size: large;
     padding: 1em 3em;
 }
+h1 {
+    font-size: xx-large;
+    font-weight: bold;
+}
 nav a{
-    color: white
+    color: white;
+    font-weight: bold;
 }
 footer {
     background-color: #444;
     text-align: center;
     padding: 2em 0;
 }
-main {
-    background-color: black;
-    flex: 1;
-}
+
 .contenedor {
     display: flex;
     flex-direction: column;
@@ -28,7 +36,6 @@ nav a.active {
     background-color: red;
 }
 .seccion {
-    background-color: black;
     min-height: 80vh;
     display: flex;
     flex-direction: column;
@@ -36,6 +43,7 @@ nav a.active {
     justify-content: center;
     font-size: calc(15px + 3vmin);
     color: white;
+    font-weight: bold;
 }
 .planilla {
     display: flex;
@@ -46,9 +54,28 @@ nav a.active {
     color:white;
     padding: 1em;
 }
-.foto img {
-    width: 600px;
+
+@media screen and (max-width: 1080px){
+    .planilla img {
+        width: 350px;
+    }
+    .planilla h1 {
+
+        padding-bottom: 50px;
+        padding-left: 25px;
+    }
+    .planilla iframe {
+        width: 85%;
+        height: 500px;
+    }
+    main {
+        background-image: url('https://images.wallpaperscraft.com/image/single/paint_black_texture_125883_3840x2160.jpg');
+        background-repeat: no-repeat;
+        flex: 1;
+    }
 }
-.foto2 img {
-    width: 400px;
+
+
+@media screen and (max-width: 1850px){
+    html * {margin: 0; padding: 0;}
 }

@@ -1,6 +1,9 @@
-.planilla img {
+.image {
     width: 650px;
+    height: 450px;
 }
+
+
 @media screen and (max-width: 1080px){
     .planilla img {
         width: 350px;
@@ -9,6 +12,7 @@
         font-size: xx-large;
     }
 }
+
 
 
 @media screen and (max-width: 1850px){

@@ -1,0 +1,15 @@
+
+
+@media screen and (max-width: 1080px){
+    .planilla {
+        width: 20;
+        height: 10;
+    }
+    .contenerdor {
+        min-height: 100vh;
+    }
+}
+
+@media screen and (max-width: 1850px){
+    html * {margin: 0; padding: 0;}
+}

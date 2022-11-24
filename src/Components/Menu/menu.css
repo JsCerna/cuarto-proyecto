@@ -4,13 +4,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-/* body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #eff0f4;
-} */
+
 .container2 {
     position: relative;
     display: flex;
@@ -89,4 +83,18 @@
     justify-content: center;
     align-items: center;
     color:#eff0f4
+}
+
+@media screen and (max-width: 1080px){
+    .container2 {
+        display: grid;
+
+
+    }
+
+}
+
+
+@media screen and (max-width: 1850px){
+    html * {margin: 0; padding: 0;}
 }
