@@ -8,6 +8,7 @@ import Informacion from './Components/Informacion/Informacion';
 import Contacto from './Components/Contacto/Contacto';
 import Ubicacion from './Components/Ubicacion/Ubicacion';
 import Menu from './Components/Menu/Menu';
+import Reserva from './Components/Reservas/Reserva';
 
 
 function App() {
@@ -24,6 +25,10 @@ function App() {
     <Route 
       path="/menu" 
       element={<Menu />}
+    />
+    <Route 
+      path="/reserva" 
+      element={<Reserva />}
     />
     <Route 
     path="/informacion"

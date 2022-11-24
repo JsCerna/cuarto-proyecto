@@ -5,6 +5,7 @@ const Navbar = () => {
         <NavLink to="/">Inicio</NavLink>
         <NavLink to="/informacion">¿Quienes somos?</NavLink>
         <NavLink to="/menu">Menu</NavLink>
+        <NavLink to="/reserva">Reserva</NavLink>
         <NavLink to="/ubicacion">Ubicación</NavLink>
         <NavLink to="/contacto">Contacto</NavLink>
 
