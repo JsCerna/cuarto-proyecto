@@ -1,9 +1,14 @@
 .planilla img {
     width: 650px;
 }
+.carousel-item {
+    transition: none;
+}
+
 @media screen and (max-width: 1080px){
     .planilla img {
-        width: 350px;
+        width: 400px;
+        height: 400px;
     }
     .planilla h1 {
         font-size: xx-large;

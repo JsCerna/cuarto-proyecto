@@ -24,13 +24,13 @@ const Informacion = () => {
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="https://i.ibb.co/LnPR2Nr/IMG-7049.jpg" class="d-block" alt="..." />
+      <img src="https://i.ibb.co/LnPR2Nr/IMG-7049.jpg" class="d-block w-20" alt="..." />
     </div>
     <div class="carousel-item">
-      <img src="https://i.ibb.co/sV48RV5/IMG-7046.jpg" class="d-block " alt="..." />
+      <img src="https://i.ibb.co/sV48RV5/IMG-7046.jpg" class="d-block w-20" alt="..." />
     </div>
     <div class="carousel-item">
-      <img src="https://i.ibb.co/jMVm88J/IMG-6902.jpg" class="d-block" alt="..." />
+      <img src="https://i.ibb.co/jMVm88J/IMG-6902.jpg" class="d-block w-20" alt="..." />
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

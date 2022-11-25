@@ -3,6 +3,7 @@ import { db } from '../Firebase'
 import { useEffect, useState } from 'react'
 import { collection, getDocs } from 'firebase/firestore'
 import '../Menu/menu.css'
+import Menuitem from './ItemMenu/Menuitem'
 
 const Menu = () => {
   const [menu, setMenu] = useState([]);
@@ -31,6 +32,8 @@ const Menu = () => {
     <div className='container'>
      <h1 className='text-center mt-5 fw-bold'>Menu</h1>
      <div className='container2'>
+     <Menuitem>
+     </Menuitem>
     {
     menu.map(carta => (
       <div key={carta.id} className="drop" style={{color: '#ff0f5b'}}>

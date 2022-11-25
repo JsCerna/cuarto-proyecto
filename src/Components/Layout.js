@@ -7,15 +7,13 @@ const Layout = (props) => {
         <div className="contenedor">
             <Navbar />
         <body>
-            
-        
-        <main>
-            
+    
+        <main>  
             <Outlet />               
         </main>
+
         </body>
         <footer>Desarrollado por: José Cerna</footer>
-            
         </div>
         
     )

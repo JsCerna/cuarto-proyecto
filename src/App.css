@@ -14,7 +14,7 @@ nav{
     padding: 1em 3em;
 }
 h1 {
-    font-size: xx-large;
+    font-size: 200%;
     font-weight: bold;
 }
 nav a{
@@ -22,9 +22,10 @@ nav a{
     font-weight: bold;
 }
 footer {
+    background-position: bottom;
     background-color: #444;
     text-align: center;
-    padding: 2em 0;
+    padding: 1em 0;
 }
 
 .contenedor {
@@ -56,11 +57,10 @@ nav a.active {
 }
 
 @media screen and (max-width: 1080px){
-    .planilla img {
-        width: 350px;
-    }
+    /* .planilla img {
+        width: 250px;
+    } */
     .planilla h1 {
-
         padding-bottom: 50px;
         padding-left: 25px;
     }
@@ -68,10 +68,8 @@ nav a.active {
         width: 85%;
         height: 500px;
     }
-    main {
-        background-image: url('https://images.wallpaperscraft.com/image/single/paint_black_texture_125883_3840x2160.jpg');
-        background-repeat: no-repeat;
-        flex: 1;
+    footer {
+        background-position: bottom;
     }
 }
 
