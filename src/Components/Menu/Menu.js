@@ -1,53 +1,39 @@
-import React from 'react'
-import { db } from '../Firebase'
-import { useEffect, useState } from 'react'
 import { collection, getDocs } from 'firebase/firestore'
+import React, { useEffect, useState } from 'react'
+import { Container } from 'react-bootstrap'
+import { db } from '../Firebase'
 import '../Menu/menu.css'
-import Menuitem from './ItemMenu/Menuitem'
+import MenuPaginacion from './Paginacion/Paginacion'
 
 const Menu = () => {
-  const [menu, setMenu] = useState([]);
+  const [ menu, setMenu ] = useState( [] );
 
-  useEffect(() =>{
-    const getMenu = async() => {
-      try{
-        const colRef = collection(db, 'Menu');
-        const snapshots = await getDocs(colRef)
-        
-        const docs = snapshots.docs.map((doc) => {
+  useEffect( () => {
+    const getMenu = async () => {
+      try {
+        const colRef = collection( db, 'Menu' );
+        const snapshots = await getDocs( colRef )
+
+        const docs = snapshots.docs.map( ( doc ) => {
           const data = doc.data()
           data.id = doc.id
           return data;
-        })
-        setMenu(docs)
-      }catch(error){
-        console.log(error);
+        } )
+        setMenu( docs )
+      } catch ( error ) {
+        console.log( error );
       }
     }
 
     getMenu()
-  }, []);
+  }, [] );
 
   return (
-    <div className='container'>
-     <h1 className='text-center mt-5 fw-bold'>Menu</h1>
-     <div className='container2'>
-     <Menuitem>
-     </Menuitem>
-    {
-    menu.map(carta => (
-      <div key={carta.id} className="drop" style={{color: '#ff0f5b'}}>
-        <div className='content'>
-          <img src={carta.image} alt=".." />
-          <h2 className="">{carta.name} </h2>
-          <p className="">{carta.description} </p>
-          <h3 className="">${carta.price} </h3>
-        </div>
-  
-      </div>
-  ))}
-  </div>
-  </div>
+    <Container>
+      <h1 className='text-center mt-5 fw-bold'>Menu</h1>
+      <MenuPaginacion menu={ menu }>
+      </MenuPaginacion>
+    </Container>
   )
 }
 

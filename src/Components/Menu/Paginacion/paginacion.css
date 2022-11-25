@@ -1,0 +1,9 @@
+#pagination {
+  justify-content: center !important;
+}
+
+#container-items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

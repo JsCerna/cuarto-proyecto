@@ -3,6 +3,9 @@
     height: 450px;
 }
 
+#carrusel-container1 {
+  max-width: 50% !important;
+}
 
 @media screen and (max-width: 1080px){
     .planilla img {

@@ -6,6 +6,9 @@ body {
     height: 100vh;
     flex: 1;
 }
+#root {
+  margin-top: 150px;
+}
 nav{
     background-color: #444;
     display: flex;
@@ -56,24 +59,12 @@ nav a.active {
     padding: 1em;
 }
 
-@media screen and (max-width: 1080px){
-    /* .planilla img {
-        width: 250px;
-    } */
-    .planilla h1 {
-        padding-bottom: 50px;
-        padding-left: 25px;
-    }
-    .planilla iframe {
-        width: 85%;
-        height: 500px;
-    }
-    footer {
-        background-position: bottom;
-    }
+#basic-navbar-nav {
+  justify-content: flex-end;
 }
-
-
-@media screen and (max-width: 1850px){
-    html * {margin: 0; padding: 0;}
+#navbar-bootstrap {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }

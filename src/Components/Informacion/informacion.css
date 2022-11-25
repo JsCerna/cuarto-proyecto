@@ -1,21 +1,3 @@
-.planilla img {
-    width: 650px;
-}
-.carousel-item {
-    transition: none;
-}
-
-@media screen and (max-width: 1080px){
-    .planilla img {
-        width: 400px;
-        height: 400px;
-    }
-    .planilla h1 {
-        font-size: xx-large;
-    }
-}
-
-
-@media screen and (max-width: 1850px){
-    html * {margin: 0; padding: 0;}
+#carrusel-container {
+  max-width: 50% !important;
 }
