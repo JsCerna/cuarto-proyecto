@@ -5,7 +5,6 @@ import Button from '@mui/material/Button';
 import { Send } from '@mui/icons-material'
 import { addDoc, collection } from "firebase/firestore";
 import { useState } from 'react';
-
 import swal from 'sweetalert';
 import { db } from '../../Firebase';
 
@@ -56,8 +55,9 @@ export default function FormularioReserva() {
 
 
 
-    return (
-        <main className='planilla'>
+    return ( 
+        <section>
+        <main className='planilla'>   
             <h1>¡Reserva!</h1>
             <h3>Puedes hacer una reservación a través de este formulario.
             </h3>
@@ -80,12 +80,13 @@ export default function FormularioReserva() {
                 <p><label htmlFor='time'>Hora de reserva</label>
                     <input id='time' name='time' type="time" min='08:00' max='22:00' value={formValues.time} onChange={handleFormChange}></input>
                 </p>
-
                 <Button type='submit' variant="contained" endIcon={<Send />}>
                     Reservar
                 </Button>
             </form>
-
+          
         </main>
+        </section>
+
     )
 }

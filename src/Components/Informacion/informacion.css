@@ -1,11 +1,14 @@
 #carrusel-container {
   max-width: 40% 
 }
+.planilla b {
+  text-decoration: underline;
+}
 
 
 @media screen and (max-width: 1080px){
   #carrusel-container {
-    max-width: 100%
+    max-width: 100%;
   }
 }
 

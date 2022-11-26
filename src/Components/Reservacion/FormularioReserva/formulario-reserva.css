@@ -3,7 +3,7 @@
   }
   
   form {
-    width: 250px;
+    width: 550px;
     padding: 16px;
     border-radius: 10px;
     text-align: center;
@@ -53,3 +53,17 @@
     resize: none;
     display: block;
   }
+
+  @media screen and (max-width: 1080px){
+    form {
+      width: 220px;
+      padding: 16px;
+      border-radius: 10px;
+      text-align: center;
+      margin: auto;
+      background-color: rgb(122, 122, 122);
+    }
+  }
+@media screen and (max-width: 1850px){
+    html * {margin: 0; padding: 0;}
+}

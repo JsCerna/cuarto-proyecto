@@ -40,8 +40,8 @@ return (
     ) :  <Table striped bordered hover variant='dark'>
     <thead>
         <tr>
-            <th>Persona que Reserva</th>
-            <th>Tipo de Mesa</th>
+            <th>Reservado por:</th>
+            <th>Cantidad de personas:</th>
             <th>Fecha de Reserva</th>
             <th>Hora de Reserva</th>
         </tr>

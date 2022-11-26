@@ -1,12 +1,14 @@
 import { collection, getDocs } from 'firebase/firestore'
 import React, { useEffect, useState } from 'react'
-import { Container } from 'react-bootstrap'
+import { Container, Spinner } from 'react-bootstrap'
 import { db } from '../Firebase'
 import '../Menu/menu.css'
 import MenuPaginacion from './Paginacion/Paginacion'
 
+
 const Menu = () => {
   const [ menu, setMenu ] = useState( [] );
+  const [loading, setLoading] = useState(true);
 
   useEffect( () => {
     const getMenu = async () => {
@@ -20,8 +22,10 @@ const Menu = () => {
           return data;
         } )
         setMenu( docs )
+        setLoading(false)
       } catch ( error ) {
         console.log( error );
+        setLoading(false)
       }
     }
 
@@ -29,11 +33,14 @@ const Menu = () => {
   }, [] );
 
   return (
+    <section>
     <Container>
-      <h1 className='text-center mt-5 fw-bold'>Menu</h1>
-      <MenuPaginacion menu={ menu }>
-      </MenuPaginacion>
+      <h1 className='text-center mt-5 fw-bold'>Menú</h1>
+      { loading ? (<Spinner animation="border" role="status" variant="light"></Spinner>) : 
+      (<MenuPaginacion menu={ menu }>
+      </MenuPaginacion>) }
     </Container>
+    </section>
   )
 }
 

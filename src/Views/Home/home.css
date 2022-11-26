@@ -1,12 +1,11 @@
-
-/* #carrusel-container1 {
-  max-width: 50% !important;
-} */
+#carrusel-container1 {
+  max-width: 50%;
+}
 
 @media screen and (max-width: 1080px){
-    .planilla img {
-        width: 550px;
-    }
+    #carrusel-container1 {
+        max-width: 100%
+      }
     .planilla h1 {
         display: flex;
         justify-content: center;

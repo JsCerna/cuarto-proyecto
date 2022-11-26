@@ -12,9 +12,9 @@ const Navbar = () => {
         <NavbarBT.Toggle aria-controls="basic-navbar-nav"></NavbarBT.Toggle>
         <NavbarBT.Collapse id='basic-navbar-nav'>
           <Nav>
-            <Nav.Link href='/informacion'>¿Quienes somos?</Nav.Link>
+            <Nav.Link href='/informacion'>¿Quiénes somos?</Nav.Link>
             <Nav.Link href='/menu'>Menú</Nav.Link>
-            <Nav.Link href='/reservacion'>Reservacion</Nav.Link>
+            <Nav.Link href='/reservacion'>Reservación</Nav.Link>
             <Nav.Link href='/ubicacion'>Ubicación</Nav.Link>
             <Nav.Link href='/contacto'>Contacto</Nav.Link>
           </Nav>

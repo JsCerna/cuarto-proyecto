@@ -5,9 +5,10 @@ import '../Home/home.css'
 
 const Home = () => {
   return (
-    <body>
+    <section>
+      
     <main className='planilla'>
-      <h1>Bienvenidos a Jauria Restaurant</h1>
+      <h1>Bienvenidos a Jauría Restaurant</h1>
       <p>Gastronomía marítima</p>
       <Container id='carrusel-container1'>
         <Carousel>
@@ -25,7 +26,7 @@ const Home = () => {
         </Carousel>
       </Container>
     </main>
-    </body>
+    </section>
   )
 }
 

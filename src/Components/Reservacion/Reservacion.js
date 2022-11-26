@@ -5,6 +5,7 @@ import './reservacion.css'
 
 export default function Reservacion() {
     return ( 
+    <section>
     <Tabs defaultActiveKey={'reservaciones'} fill> 
         <Tab title={'Reservaciones'} 
         eventKey={'reservaciones'}
@@ -16,5 +17,6 @@ export default function Reservacion() {
         <FormularioReserva></FormularioReserva> 
        </Tab>
     </Tabs> 
+    </section>
     )
 }
