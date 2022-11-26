@@ -5,8 +5,8 @@ import ItemMenu from './ItemMenu/ItemMenu';
 import './paginacion.css';
 const MenuPaginacion = ( { menu } ) => {
   const [ paginaActiva, setPaginaActiva ] = useState( 1 )
-  const [ platosPorPagina ] = useState( 4 );
-  const [ items, setItems ] = useState( [] )
+  const [ platosPorPagina ] = useState( 3 );
+  const [ items, setItems ] = useState( menu.slice( 0, paginaActiva * platosPorPagina ) )
 
   const cantidadItems = menu.length
   const paginas = Math.ceil( cantidadItems / platosPorPagina )

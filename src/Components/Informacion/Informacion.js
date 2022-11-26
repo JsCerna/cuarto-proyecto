@@ -5,7 +5,7 @@ import './informacion.css';
 const Informacion = () => {
 
   return (
-    <main className='planilla'>
+    <main className='planilla'>  
       <h1>Jauria Restaurant</h1>
       <h2>Desde 2019</h2>
       <p>El objetivo principal que dio pie para generar este emprendimiento fue la idea de brindar una alternativa gastronómica diferente,
@@ -22,20 +22,18 @@ const Informacion = () => {
         <Carousel>
           <Carousel.Item>
             <img src="https://i.ibb.co/LnPR2Nr/IMG-7049.jpg" className="d-block w-100" alt="..."
-              height={ 400 } />
+              height={ 580 } />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="https://i.ibb.co/sV48RV5/IMG-7046.jpg" className="d-block w-100" alt="..." height={ 400 } />
-
+            <img src="https://i.ibb.co/sV48RV5/IMG-7046.jpg" className="d-block w-100" alt="..." height={ 580 } />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="https://i.ibb.co/jMVm88J/IMG-6902.jpg" className="d-block w-100" alt="..." height={ 400 } />
+            <img src="https://i.ibb.co/jMVm88J/IMG-6902.jpg" className="d-block w-100" alt="..." height={ 580 } />
           </Carousel.Item>
         </Carousel>
-
       </Container>
+      </main>
 
-    </main>
   )
 }
 

@@ -5,6 +5,7 @@ import '../Home/home.css'
 
 const Home = () => {
   return (
+    <body>
     <main className='planilla'>
       <h1>Bienvenidos a Jauria Restaurant</h1>
       <p>Gastronomía marítima</p>
@@ -12,18 +13,19 @@ const Home = () => {
         <Carousel>
           <Carousel.Item>
             <img src="https://i.ibb.co/NWBPmQz/jauria.jpg" className="d-block w-100" alt="..."
-              height={ 400 } />
+              height={ 520 } />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="https://i.ibb.co/5n1gdkR/IMG-7048.jpg" className="d-block w-100" alt="..." height={ 400 } />
+            <img src="https://i.ibb.co/5n1gdkR/IMG-7048.jpg" className="d-block w-100" alt="..." height={ 520 } />
 
           </Carousel.Item>
           <Carousel.Item>
-            <img src="https://i.ibb.co/85dvYfB/IMG-7047.jpg" className="d-block w-100" alt="..." height={ 400 } />
+            <img src="https://i.ibb.co/85dvYfB/IMG-7047.jpg" className="d-block w-100" alt="..." height={ 520 } />
           </Carousel.Item>
         </Carousel>
       </Container>
     </main>
+    </body>
   )
 }
 

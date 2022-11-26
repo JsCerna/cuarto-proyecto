@@ -44,8 +44,8 @@ export default function Contacto() {
       }
       
     }
-
   }
+
 
   function handleFormChange(event) {
     const { target } = event
@@ -92,5 +92,5 @@ export default function Contacto() {
       </section>
     </main>
   )
-}
-
+  
+  }

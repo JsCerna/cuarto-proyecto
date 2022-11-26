@@ -5,11 +5,9 @@ import Informacion from './Components/Informacion/Informacion';
 import Layout from './Components/Layout';
 import Menu from './Components/Menu/Menu';
 import Navbar from './Components/Navbar';
-import Reserva from './Components/Reservas/Reserva';
 import Ubicacion from './Components/Ubicacion/Ubicacion';
 import Home from './Views//Home/Home';
 import Errorpage from './Views/Errorpage';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Reservacion from './Components/Reservacion/Reservacion';
 
@@ -50,7 +48,6 @@ function App() {
         </Route>
         <Route path='*' element={ <Errorpage /> } />
       </Routes>
-      <footer>Desarrollado por: José Cerna y Esteban Poblete</footer>
     </>
   );
 }

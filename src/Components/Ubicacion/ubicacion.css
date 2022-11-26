@@ -5,6 +5,10 @@
         width: 20;
         height: 10;
     }
+    .planilla iframe {
+        width: 350px;
+        height: 500px;
+    }
     .contenerdor {
         min-height: 100vh;
     }
