@@ -17,6 +17,7 @@ const Navbar = () => {
             <Nav.Link href='/reservacion'>Reservación</Nav.Link>
             <Nav.Link href='/ubicacion'>Ubicación</Nav.Link>
             <Nav.Link href='/contacto'>Contacto</Nav.Link>
+            <Nav.Link href='/sociales'>Sociales</Nav.Link>
           </Nav>
         </NavbarBT.Collapse>
       </Container>

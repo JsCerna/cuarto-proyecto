@@ -10,6 +10,7 @@ import Home from './Views//Home/Home';
 import Errorpage from './Views/Errorpage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Reservacion from './Components/Reservacion/Reservacion';
+import Sociales from './Components/Sociales/Sociales';
 
 
 function App() {
@@ -44,6 +45,10 @@ function App() {
           <Route
             path="/ubicacion"
             element={ <Ubicacion /> }
+          />
+          <Route
+            path="/sociales"
+            element={ <Sociales /> }
           />
         </Route>
         <Route path='*' element={ <Errorpage /> } />
