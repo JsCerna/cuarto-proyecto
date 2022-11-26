@@ -11,6 +11,7 @@ import Home from './Views//Home/Home';
 import Errorpage from './Views/Errorpage';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Reservacion from './Components/Reservacion/Reservacion';
 
 
 function App() {
@@ -31,8 +32,8 @@ function App() {
             element={ <Menu /> }
           />
           <Route
-            path="/reserva"
-            element={ <Reserva /> }
+            path="/reservacion"
+            element={ <Reservacion /> }
           />
           <Route
             path="/informacion"
@@ -49,7 +50,7 @@ function App() {
         </Route>
         <Route path='*' element={ <Errorpage /> } />
       </Routes>
-      <footer>Desarrollado por: José Cerna</footer>
+      <footer>Desarrollado por: José Cerna y Esteban Poblete</footer>
     </>
   );
 }
