@@ -14,7 +14,7 @@ const Navbar = () => {
           <Nav>
             <Nav.Link href='/informacion'>¿Quienes somos?</Nav.Link>
             <Nav.Link href='/menu'>Menú</Nav.Link>
-            <Nav.Link href='/reserva'>Reserva</Nav.Link>
+            <Nav.Link href='/reservacion'>Reservacion</Nav.Link>
             <Nav.Link href='/ubicacion'>Ubicación</Nav.Link>
             <Nav.Link href='/contacto'>Contacto</Nav.Link>
           </Nav>
