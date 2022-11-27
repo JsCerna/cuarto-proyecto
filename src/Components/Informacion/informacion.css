@@ -4,12 +4,18 @@
 .planilla b {
   text-decoration: underline;
 }
-
+.planilla p {
+  margin-bottom: 20px;
+}
 
 @media screen and (max-width: 1080px){
   #carrusel-container {
     max-width: 100%;
   }
+  .planilla p {
+    margin-bottom: 20px;
+  }
+  
 }
 
 @media screen and (max-width: 1850px){

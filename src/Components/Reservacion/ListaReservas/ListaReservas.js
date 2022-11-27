@@ -31,7 +31,7 @@ useEffect(() => {
 }, [])
 
 return (
-<Container>
+<Container className='planilla'>
     <p> A continuación, se podrá ver la lista de reservaciones realizadas:
     </p>
    {
