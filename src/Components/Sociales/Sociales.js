@@ -12,13 +12,13 @@ const Sociales = () => {
         <Carousel>
           <Carousel.Item>
             <img src="https://i.ibb.co/Rj1Cxhx/IMG-7029.jpg" className="d-block w-100" alt="..."
-              height={ 350 } />
+              height={ 370 } />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="https://i.ibb.co/Q6sjLhp/IMG-7031.jpg" className="d-block w-100" alt="..." height={ 350 } />
+            <img src="https://i.ibb.co/Q6sjLhp/IMG-7031.jpg" className="d-block w-100" alt="..." height={ 370 } />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="https://i.ibb.co/PY8X615/IMG-7030.jpg" className="d-block w-100" alt="..." height={ 350 } />
+            <img src="https://i.ibb.co/PY8X615/IMG-7030.jpg" className="d-block w-100" alt="..." height={ 370 } />
           </Carousel.Item>
         </Carousel>
       </Container>
@@ -29,13 +29,13 @@ const Sociales = () => {
         <Carousel>
           <Carousel.Item>
             <img src="https://i.ibb.co/QNhBhvk/IMG-7034.jpg" className="d-block w-100" alt="..."
-              height={ 350 } />
+              height={ 370 } />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="https://i.ibb.co/0y36Yk6/IMG-7044.jpg" className="d-block w-100" alt="..." height={ 350 } />
+            <img src="https://i.ibb.co/0y36Yk6/IMG-7044.jpg" className="d-block w-100" alt="..." height={ 370 } />
           </Carousel.Item>
           <Carousel.Item>
-            <img src="https://i.ibb.co/QNhBhvk/IMG-7034.jpg" className="d-block w-100" alt="..." height={ 350 } />
+            <img src="https://i.ibb.co/9cbPVFq/IMG-7084-1.jpg" className="d-block w-100" alt="..." height={ 370 } />
           </Carousel.Item>
         </Carousel>
       </Container>
