@@ -63,7 +63,6 @@ export default function Contacto() {
 
 
   return (
-    <section>
       <main className='planilla'>
         <h1>¡Contáctanos!</h1>
         <h3>Puedes contactarnos a través de este formulario
@@ -99,6 +98,5 @@ export default function Contacto() {
           <p><WhatsappIcon fontSize="large" sx={{ color: blue[500] }} /> +56 9 9999 9999</p>
         </div>
       </main>
-    </section>
   )
 }
