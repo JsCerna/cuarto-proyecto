@@ -53,7 +53,7 @@ function App() {
         </Route>
         <Route path='*' element={ <Errorpage /> } />
       </Routes>
-
+      <footer>Desarrollado por : José Cerna & Esteban Poblete</footer>
     </>
   );
 }

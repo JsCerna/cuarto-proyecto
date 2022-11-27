@@ -1,4 +1,11 @@
 .container h1 {
-    font-size: 300%;
+    font-size: 150%;
     color:white
 }
+
+@media screen and (max-width: 1080px){
+  }
+  
+  @media screen and (max-width: 1850px){
+    html * {margin: 0; padding: 0;}
+  }

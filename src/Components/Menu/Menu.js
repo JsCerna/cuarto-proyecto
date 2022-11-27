@@ -33,14 +33,22 @@ const Menu = () => {
   }, [] );
 
   return (
-    <section>
-    <Container>
+    <main>
+
+      <Container>
       <h1 className='text-center mt-5 fw-bold'>Menú</h1>
       { loading ? (<Spinner animation="border" role="status" variant="light"></Spinner>) : 
       (<MenuPaginacion menu={ menu }>
       </MenuPaginacion>) }
     </Container>
-    </section>
+    <div>
+    <p>el</p>
+    <p>footer</p>
+    <p>no</p>
+    <p>quiere</p>
+    <p>bajar</p>
+    </div>
+    </main>
   )
 }
 

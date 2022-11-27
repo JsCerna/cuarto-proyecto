@@ -4,7 +4,6 @@ import './item-menu.css'
 
 const ItemMenu = ( { plato } ) => {
   return (
-
     <div className="drop" style={ { color: '#ff0f5b' } }>
       <div className='content'>
         <img src={ plato.image } alt=".." />
