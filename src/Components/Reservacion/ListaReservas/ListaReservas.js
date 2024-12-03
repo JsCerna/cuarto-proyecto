@@ -1,77 +1,46 @@
-import { collection, getDocs } from 'firebase/firestore'
-import { useEffect, useState } from 'react'
-import { Container, Spinner, Table } from 'react-bootstrap'
-import { db } from '../../Firebase'
+import React, { useEffect, useState } from 'react';
+import { collection, getDocs } from 'firebase/firestore'; // Importa getDocs y collection para Firebase 9+
 import './lista-reservas.css'
+import { db } from '../../Firebase';
 
-export default function ListaReservas(){
+const ListaReservas = () => {
+  const [reservas, setReservas] = useState([]);
 
-const [reservas, setReservas] = useState ([])
-const [loadingData, setLoadingData] = useState (true)
+  useEffect(() => {
+    const fetchReservas = async () => {
+      try {
+        // Obtén las reservas desde Firestore
+        const querySnapshot = await getDocs(collection(db, 'DB'));
+        const reservasData = querySnapshot.docs.map((doc) => {
+          const data = doc.data();
+          return {
+            id: doc.id,
+            nombre: data.nombre,
+            fecha: data.fecha.toDate().toLocaleString(),  // Convierte el timestamp
+            email: data.email
+          };
+        });
+        setReservas(reservasData);
+      } catch (error) {
+        console.error("Error al obtener las reservas: ", error);
+      }
+    };
 
+    fetchReservas();
+  }, []);
 
+  return (
+    <div>
+      <h2>Lista de Reservas</h2>
+      <ul>
+        {reservas.map((reserva) => (
+          <li key={reserva.id}>
+            {reserva.nombre} - {reserva.fecha} - {reserva.email}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
 
-
-useEffect(() => {
-    const obtenerReservaciones = async () => {
-        const reservasCollectionRef = collection (db, 'Reservas' )
-        const querySnapshot = await getDocs (reservasCollectionRef)
-        const reservas = querySnapshot.docs.map(
-            doc => { return {id:doc.id, ...doc.data()}
-            })
-            setReservas(reservas)
-            setLoadingData(false)
-    }
-    try {
-        obtenerReservaciones()
-    } catch (error) {
-        setLoadingData(false)
-        console.log(error)
-    }
-}, [])
-
-return (
-<Container className='planilla'>
-    <p> A continuación, se podrá ver la lista de reservaciones realizadas:
-    </p>
-   {
-    loadingData ? (
-        <Spinner animation='border' role={'status'}></Spinner>
-    ) :  <Table striped bordered hover variant='dark'>
-    <thead>
-        <tr>
-            <th>Reservado por:</th>
-            <th>Cantidad de personas:</th>
-            <th>Fecha de Reserva</th>
-            <th>Hora de Reserva</th>
-        </tr>
-    </thead>
-    <tbody>
-        {
-            reservas.length === 0 ?
-            <tr>
-                <td colSpan={4}>No hay reservaciones</td>
-            </tr>
-            : reservas.map(reserva => (
-                <tr key={reserva.id}>
-                    <td>
-                    { reserva.name}
-                    </td>
-                    <td>
-                    { reserva.mesa}
-                    </td>
-                    <td>
-                    { reserva.dates}
-                    </td>
-                    <td>
-                    { reserva.time}
-                    </td>
-                </tr>
-            ))
-        }
-    </tbody>
-</Table>
-   }
-</Container>
-)
-}
+export default ListaReservas;
